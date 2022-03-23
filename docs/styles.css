@@ -67,6 +67,12 @@ main .mzp-l-content {
   cursor: pointer;
 }
 
+.protosite-nav-main {
+  background: #000;
+  color: #fff;
+  padding: 10px;
+}
+
 @media (min-width: 768px) {
   .protosite-nav-main {
     -webkit-overflow-scrolling: touch;
@@ -84,15 +90,16 @@ main .mzp-l-content {
     z-index: 1;
   }
 }
-.protosite-nav-main {
-  background: #000;
-  color: #fff;
-  padding: 10px;
-}
+
 .protosite-nav-main :link,
 .protosite-nav-main :visited {
   color: #fff;
   text-decoration: none;
+}
+
+.protosite-nav-main :link:hover,
+.protosite-nav-main :visited:hover {
+  text-decoration: underline;
 }
 
 .protosite-nav-main .protosite-js-nav-toggle {
