@@ -15,7 +15,7 @@ We start by examining what makes the Web special. Here we identify a few key val
 
 *Everyone can access the Web, and use it to reach others.*
 
-A key strength of the Web is that there are minimal barriers to entry for both users and publishers. This differs from many other systems such as the telephone or television networks which limit full participation to large entities, inevitably resulting in a system that serves their interests rather than the needs of everyone. (Note: in this document "publishers" refers to entities who publish directly to users, as opposed to those who publish through a mediated platform.) 
+A key strength of the Web is that there are minimal barriers to entry for both users and publishers. This differs from many other systems such as the telephone or television networks which limit full participation to large entities, inevitably resulting in a system that serves their interests rather than the needs of everyone. (Note: in this document "publishers" refers to entities who publish directly to users, as opposed to those who publish through a mediated platform.)
 
 One key property that enables this is interoperability based on common standards; any endpoint which conforms to these standards is automatically part of the Web, and the standards themselves aim to avoid assumptions about the underlying hardware or software that might restrict where they can be deployed.  This means that no single party decides which form-factors, devices, operating systems, and browsers may access the Web. It gives people more choices, and thus more avenues to overcome personal obstacles to access. Choices in assistive technology, localization, form-factor, and price, combined with thoughtful design of the standards themselves, all permit a wildly diverse group of people to reach the same Web.
 
@@ -131,7 +131,7 @@ Ideally, new capabilities can be designed so that they can be safely exposed to 
 
 However, other capabilities — like camera access — involve inherent risks which are difficult to sidestep. In these cases, we cannot safely expose the capability by default. In some circumstances, it may be appropriate to offer people the choice to enable it for a given site. We use the following criteria to evaluate whether that is the case:
 
-- ***Value:* Does the capability deliver sufficient benefit to the user to warrant the risk?**
+- *Value:* Does the capability deliver sufficient benefit to the user to warrant the risk?
 
 - *Severity:* What level of harm can occur if the capability is misused?
 
