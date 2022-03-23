@@ -23,6 +23,18 @@
   <!-- Favicons & Icons -->
   <link rel="icon" type="image/png" href="../favicon.png">
 
+  <style>
+    /* Temporary hack */
+    @media (min-width: 768px) {
+      .protosite-main {
+        padding-left: 24vw;
+      }
+    }
+    .article-content h4 {
+      font-size: 1.2rem;
+    }
+  </style>
+
   <script>
     /* This Source Code Form is subject to the terms of the Mozilla Public
      * License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -154,7 +166,7 @@
   </nav>
 
   <main class="protosite-main" role="main" itemscope itemtype="http://schema.org/Article">
-    <article role="article" itemprop="articleBody">
+    <article class="mzp-c-article" role="article" itemprop="articleBody">
       <section>
         <div class="mzp-t-content-md">
           <header>
@@ -170,7 +182,7 @@
 <p>We start by examining what makes the Web special. Here we identify a few key values, which guide our thinking. The Web in practice doesn’t always achieve these values, but we believe they reflect the Web at its best.</p>
 <h3 id="openness"><a href="#openness" class="protosite-pattern-anchor">Openness</a></h3>
 <p><em>Everyone can access the Web, and use it to reach others.</em></p>
-<p>A key strength of the Web is that there are minimal barriers to entry for both users and publishers. This differs from many other systems such as the telephone or television networks which limit full participation to large entities, inevitably resulting in a system that serves their interests rather than the needs of everyone. (Note: in this document "publishers" refers to entities who publish directly to users, as opposed to those who publish through a mediated platform.) </p>
+<p>A key strength of the Web is that there are minimal barriers to entry for both users and publishers. This differs from many other systems such as the telephone or television networks which limit full participation to large entities, inevitably resulting in a system that serves their interests rather than the needs of everyone. (Note: in this document "publishers" refers to entities who publish directly to users, as opposed to those who publish through a mediated platform.)</p>
 <p>One key property that enables this is interoperability based on common standards; any endpoint which conforms to these standards is automatically part of the Web, and the standards themselves aim to avoid assumptions about the underlying hardware or software that might restrict where they can be deployed.  This means that no single party decides which form-factors, devices, operating systems, and browsers may access the Web. It gives people more choices, and thus more avenues to overcome personal obstacles to access. Choices in assistive technology, localization, form-factor, and price, combined with thoughtful design of the standards themselves, all permit a wildly diverse group of people to reach the same Web.</p>
 <p>Similarly, the technical architecture of the Web reduces gatekeeping on publishing. The <a href="https://en.wikipedia.org/wiki/URL">URL</a> acts as a global, low-friction, distributed namespace, allowing individuals to publish on their own terms, with comparatively little interference from centralized actors seeking to extract payment or exercise editorial control.</p>
 <p>The installation-free nature of the Web also makes the default experience frictionless. Individuals can seamlessly browse between sites without obstruction or commitment, which empowers them to explore, participate, and choose when to form deeper relationships.</p>
@@ -231,7 +243,7 @@
 <p>Ideally, new capabilities can be designed so that they can be safely exposed to any site without requesting the user’s permission. Often this takes some care and results in a feature which is somewhat different from the equivalent functionality available to native applications. For example, it is not safe to allow Web content to open up an arbitrary TCP socket to any server on the Internet because that capability could be used to bypass corporate firewalls. Instead, WebSockets and WebRTC both implement mechanisms which ensure that the website can only talk to servers which have consented to communicate with them. This allows us to make those APIs universally available without having to explain the risks to the user.</p>
 <p>However, other capabilities — like camera access — involve inherent risks which are difficult to sidestep. In these cases, we cannot safely expose the capability by default. In some circumstances, it may be appropriate to offer people the choice to enable it for a given site. We use the following criteria to evaluate whether that is the case:</p>
 <ul class="mzp-u-list-styled">
-<li><p><strong><em>Value:</em> Does the capability deliver sufficient benefit to the user to warrant the risk?</strong></p></li>
+<li><p><em>Value:</em> Does the capability deliver sufficient benefit to the user to warrant the risk?</p></li>
 <li><p><em>Severity:</em> What level of harm can occur if the capability is misused?</p></li>
 <li><p><em>Consent:</em> Can individuals make an informed decision about the risk?</p></li>
 <li><p><em>Transparency:</em> Is it clear how the capability is being used, and by whom?</p></li>
@@ -310,7 +322,7 @@
 <p>The biggest challenge is that modern site-building techniques tend to require much more intentional effort by the author in order to deliver an accessible experience. The Web began with only a few dynamic elements, like <code>&lt;textarea&gt;</code> and <code>&lt;button&gt;</code>, which were straightforward to manage with assistive technology. As the Web became more dynamic, there was an explosion of new widgets implemented in JavaScript with complex and nuanced semantics that are largely opaque to the browser, preventing assistive technologies from rendering them to users in a sensible form. This led to the creation of <a href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA">ARIA</a>, which allowed web authors to explicitly embed accessibility information into pages. Unfortunately, adoption was poor: sites had to take explicit action rather than having things work by default, they needed to grapple with a <a href="https://www.w3.org/TR/wai-aria-1.1/#combobox">level of complexity</a> normally reserved for browser implementers, and there was no low-friction way to verify that they’d done it correctly.</p>
 <p>As with performance and localization, the reality is that there is a finite budget of effort that sites will dedicate to accessibility; if we want sites to be accessible we need to help authors build sites that are accessible by default. Increasing the use of <a href="https://docs.google.com/document/d/1Ep3i0elGuvA1RxnmL3rukT9kPbYZYuduKKbu1RrFkVs/edit#heading=h.v1bvjntc647n">declarative approaches</a> is key here: the more semantic information the browser has the better it can do at providing accessible versions of content. We see opportunity for progress on this front, as well as improving JavaScript frameworks to offer more widgets with built-in accessibility. Ultimately, though, we may need to augment assistive technology implementations with more complex heuristics to automatically detect and repair common accessibility issues. </p>
 <h3 id="settingahighbar"><a href="#settingahighbar" class="protosite-pattern-anchor">Setting a High Bar</a></h3>
-<p>We want the Web to be around for a long time, so it’s important to get it right. This means browser vendors should collectively set a high bar for Web Platform quality. Every company is influenced by its own agenda, business needs, and politics. Left unchecked, those pressures can easily result in the inclusion of ill-conceived features that everyone comes to regret. This dynamic was on full display in the era of Internet Explorer 6, and we’re still unwinding the consequences.</p>
+<p>We want the Web to be around for a long time, so it’s important to get it right. This means browser vendors should collectively set a high bar for Web Platform quality. Every company is influenced by its own agenda, business needs, and politics. Left unchecked, those pressures can easily result in the inclusion of ill-conceived features that everyone comes to regret. This dynamic was on full display in the era of Internet Explorer 6, and we're still unwinding the consequences.</p>
 <p>The Web’s multi-stakeholder development process is far from perfect, but nonetheless serves as a powerful bulwark against a corporate agenda-du-jour pushing bad ideas into the Web. Every organization suffers from this blind spot, including Mozilla. Some time ago, we proposed a <a href="https://web.archive.org/web/20201128180021/https://developer.mozilla.org/en-US/docs/Archive/B2G_OS/API">plethora of half-baked Web APIs</a> as part of our FirefoxOS initiative to build a Web-based operating system. Other vendors largely ignored or rejected these proposals — which was frustrating at the time, but which we are deeply grateful for today. We believe the Web deserves a high bar, and invite others to hold us to it.</p>
 <h3 id="mobile"><a href="#mobile" class="protosite-pattern-anchor">Mobile</a></h3>
 <p>While the Web has been fantastically successful in displacing old-style "desktop" applications on personal computers,, native apps remain dominant on mobile devices.This is true even for sites like Facebook and Twitter which have powerful, heavily-used Web-based versions for desktop users. There are a number of reasons why developers often choose to target mobile apps rather than the Web, including:</p>
