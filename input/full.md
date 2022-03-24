@@ -1,3 +1,4 @@
+*March 23, 2022*
 
 Mozilla's [mission](https://www.mozilla.org/en-US/mission/) is to ensure that the Internet is a global public resource, open and accessible to all. We believe in an Internet that puts people first, where individuals can shape their own experience and are empowered, safe, and independent.
 
