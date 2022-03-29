@@ -294,7 +294,7 @@ The Web’s multi-stakeholder development process is far from perfect, but nonet
 
 ## Mobile
 
-While the Web has been fantastically successful in displacing old-style "desktop" applications on personal computers,, native apps remain dominant on mobile devices.This is true even for sites like Facebook and Twitter which have powerful, heavily-used Web-based versions for desktop users. There are a number of reasons why developers often choose to target mobile apps rather than the Web, including:
+While the Web has been fantastically successful in displacing old-style "desktop" applications on personal computers, native apps remain dominant on mobile devices. This is true even for sites like Facebook and Twitter which have powerful, heavily-used Web-based versions for desktop users. There are a number of reasons why developers often choose to target mobile apps rather than the Web, including:
 
 - Built-in app stores dramatically reduce the friction of finding and installing native software. In addition, because those apps are curated and (to some extent) sandboxed, users feel more confident installing them than they would downloading an executable to their personal computer.
 - Apps have a built-in monetization story facilitated by the operating system vendor (albeit with a significant fraction paid to the platform). By contrast, Web monetization is largely DIY. 
