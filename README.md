@@ -1,4 +1,3 @@
-
 # Instructions for publishing a new version
 
 - Update `input/summary.md` and `input/full.md`
