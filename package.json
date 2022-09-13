@@ -1,8 +1,0 @@
-{
-  "scripts": {},
-  "devDependencies": {
-    "@mozilla-protocol/core": "^16.0.0",
-    "playwright-firefox": "^1.20.0",
-    "showdown": "^2.0.3"
-  }
-}
